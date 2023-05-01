@@ -13,7 +13,7 @@ public class slideShow : MonoBehaviour
     bool toBlack = false;
     bool toColour = false;
 
-    public float fadeSpeed = 0.5f;
+    public float fadeSpeed = 0.1f;
     public TMP_Text canvasText;
 
     //list of images
@@ -34,7 +34,7 @@ public class slideShow : MonoBehaviour
         if(toBlack)
         {
             float tempAlpha = imageComponent.color.a;
-            alpha = tempAlpha - (0.01f * fadeSpeed);
+            alpha = tempAlpha - (0.1f * fadeSpeed);
             if(imageComponent.color.a <= 0.1f)
             {
                 toBlack = false;
@@ -52,7 +52,7 @@ public class slideShow : MonoBehaviour
         if(toColour)
         {
             float tempAlpha = imageComponent.color.a;
-            alpha = tempAlpha + (0.01f * fadeSpeed);
+            alpha = tempAlpha + (0.1f * fadeSpeed);
             if(imageComponent.color.a >= 1)
             {
                 toBlack = false;
