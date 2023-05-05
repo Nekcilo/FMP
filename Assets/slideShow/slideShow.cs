@@ -95,6 +95,40 @@ public class slideShow : MonoBehaviour
         canvasText.text = (currentIndex+1).ToString() + "/" + listLen.ToString();
     }
 
+    public void TaskOnClickR()
+    {
+        if(!toBlack && !toColour)
+        {
+            if(currentIndex >= listLen - 1)
+            {
+                currentIndex = 0;
+                toBlack = true;
+            }
+            else
+            {
+                currentIndex++;
+                toBlack = true;
+            }
+        }       
+    }
+
+    public void TaskOnClickL()
+    {
+        if(!toBlack && !toColour)
+        {
+            if(currentIndex <= 0)
+            {
+                currentIndex = listLen - 1;
+                toBlack = true;
+            }
+            else
+            {
+                currentIndex--;
+                toBlack = true;
+            }
+        }      
+    }
+
     void Transition(int imageId)
     {
         imageComponent.sprite = images[imageId];
