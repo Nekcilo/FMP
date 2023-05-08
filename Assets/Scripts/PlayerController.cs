@@ -12,6 +12,8 @@ public class PlayerController: MonoBehaviour
     public GameObject cheese;
     private bool visible = false;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,16 +32,7 @@ public class PlayerController: MonoBehaviour
                 if(collider.gameObject.tag == "Interactable")
                 {
                     Debug.Log("Touched Object");
-                    if(visible)
-                    {
-                        cheese.SetActive (false);
-                        visible = false;
-                    }
-                    else
-                    {
-                        cheese.SetActive (true);
-                        visible = true;
-                    }
+                    collider.gameObject.GetComponent<InteractionController>().Trigger();
                 }
             }      
         }   
