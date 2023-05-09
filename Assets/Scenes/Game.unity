@@ -160,8 +160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000019073486, y: 0.00000333786}
-  m_SizeDelta: {x: 252.9839, y: 142.0288}
+  m_AnchoredPosition: {x: 0.0000076293945, y: -239}
+  m_SizeDelta: {x: 419.0814, y: 235.2783}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9736354
 MonoBehaviour:
@@ -291,11 +291,22 @@ MonoBehaviour:
   _wordDelay: 0.05
   done: 1
   paragraphs:
-  - cheeseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-  - yippeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-  - slayyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-  - yippeeeeee
-  - slay
+  - "Playing guitar would be a good way to pass the time\u2026"
+  - but I'm not in the mood right now
+  - "I love this picture\u2026"
+  - It reminds me of a camp when one of the kids
+  - convinced us that if we fed ants strawberries
+  - then the ants would taste like strawberries
+  - ...
+  - "That didn\u2019t end well"
+  - I remember this!
+  - Lee dragged me along to one of her nature walks
+  - so I sneakily took a photo of her whilst she was working
+  - "it\u2019s funny how concentrated she is"
+  - This is the radio transmitter we use to communicate
+  - when one of us goes out
+  - but- we only use it for emergencies
+  - "I can\u2019t go out right now, Lee will be back soon"
 --- !u!1 &25871053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,8 +2414,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: -0.000002503395}
-  m_SizeDelta: {x: 303.7427, y: 182.1601}
+  m_AnchoredPosition: {x: 0.0000076293945, y: -239}
+  m_SizeDelta: {x: 503.1661, y: 301.758}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &579448620
 MonoBehaviour:
@@ -2657,7 +2668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599578989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2100019, y: 1.4876213, z: -10}
+  m_LocalPosition: {x: 0.21, y: 1.4876213, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2987,6 +2998,7 @@ GameObject:
   - component: {fileID: 834861588}
   - component: {fileID: 834861587}
   - component: {fileID: 834861586}
+  - component: {fileID: 834861589}
   m_Layer: 0
   m_Name: DoorInteract
   m_TagString: Interactable
@@ -3087,6 +3099,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &834861589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834861585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c722452455fdafc4b80b89649912b7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 9736358}
+  paragraphIDStart: 15
+  paragraphIDEnd: 15
 --- !u!1 &854676956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3474,6 +3501,7 @@ GameObject:
   - component: {fileID: 899847806}
   - component: {fileID: 899847805}
   - component: {fileID: 899847804}
+  - component: {fileID: 899847807}
   m_Layer: 0
   m_Name: RadioInteract
   m_TagString: Interactable
@@ -3574,6 +3602,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &899847807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899847803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c722452455fdafc4b80b89649912b7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  paragraphIDStart: 12
+  paragraphIDEnd: 14
 --- !u!1 &930928117
 GameObject:
   m_ObjectHideFlags: 0
@@ -3799,7 +3842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 9736358}
   paragraphIDStart: 0
-  paragraphIDEnd: 3
+  paragraphIDEnd: 1
 --- !u!1 &941581816
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,6 +3988,7 @@ GameObject:
   - component: {fileID: 1012657827}
   - component: {fileID: 1012657826}
   - component: {fileID: 1012657825}
+  - component: {fileID: 1012657828}
   m_Layer: 0
   m_Name: PosterInteract1
   m_TagString: Interactable
@@ -4045,6 +4089,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1012657828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012657824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c722452455fdafc4b80b89649912b7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 9736358}
+  paragraphIDStart: 8
+  paragraphIDEnd: 11
 --- !u!1 &1053814904
 GameObject:
   m_ObjectHideFlags: 0
@@ -6408,6 +6467,7 @@ GameObject:
   - component: {fileID: 2121251696}
   - component: {fileID: 2121251695}
   - component: {fileID: 2121251694}
+  - component: {fileID: 2121251697}
   m_Layer: 0
   m_Name: PosterInteract2
   m_TagString: Interactable
@@ -6508,6 +6568,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2121251697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121251693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c722452455fdafc4b80b89649912b7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBox: {fileID: 0}
+  paragraphIDStart: 2
+  paragraphIDEnd: 7
 --- !u!114 &7441982521330606230
 MonoBehaviour:
   m_ObjectHideFlags: 0
