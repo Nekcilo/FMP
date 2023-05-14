@@ -22,8 +22,7 @@ public class TypewriterEffect : MonoBehaviour
             _canWord = true;
             yield return null;
         }
-
-
+        _textBox.text = "";
         done = false;
         foreach(char character in paragraphs[paragraph])
         {

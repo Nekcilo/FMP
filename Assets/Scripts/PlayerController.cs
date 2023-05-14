@@ -11,7 +11,8 @@ public class PlayerController: MonoBehaviour
     private Collider2D collider;
     public GameObject cheese;
     private bool visible = false;
-
+    public AnimationManager animManager;
+    private bool animOpen = false;
 
 
     // Start is called before the first frame update
@@ -33,6 +34,11 @@ public class PlayerController: MonoBehaviour
                 {
                     Debug.Log("Touched Object");
                     collider.gameObject.GetComponent<InteractionController>().Trigger();
+                    if(!animOpen)
+                    {
+                        animOpen = true;
+                        animManager.PlayAnim("BoxOpen");
+                    }
                 }
             }      
         }   
@@ -48,6 +54,13 @@ public class PlayerController: MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other) 
     {
+        Debug.Log("Cheese");
+        if(animOpen)
+        {
+            Debug.Log("rice");
+            animOpen = false;
+            animManager.PlayAnim("BoxClose");
+        }
         collider = null;
     }
     

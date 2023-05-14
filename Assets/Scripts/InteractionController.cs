@@ -15,6 +15,7 @@ public class InteractionController: MonoBehaviour
         {
             if(dialogueBox.paragraphs.Count >= paragraphIDStart)
             {
+                currentID = paragraphIDStart;
                 dialogueBox.TriggerTyping(paragraphIDStart);
                 triggered = true;
             }
@@ -28,6 +29,7 @@ public class InteractionController: MonoBehaviour
             if(dialogueBox.done)
             {
                 currentID++;
+                if(currentID > paragraphIDEnd){return;}
                 if(dialogueBox.paragraphs.Count >= currentID)
                 {
                     dialogueBox.TriggerTyping(currentID);
