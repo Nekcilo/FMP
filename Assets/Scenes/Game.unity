@@ -267,7 +267,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9736352}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ed57967c52645d390a89dcf8f61ba73, type: 3}
   m_Name: 
@@ -297,14 +297,14 @@ MonoBehaviour:
   - It reminds me of a camp when one of the kids
   - convinced us that if we fed ants strawberries
   - then the ants would taste like strawberries
-  - rice
+  - ...
   - "That didn\u2019t end well"
   - I remember this!
   - Lee dragged me along to one of her nature walks
   - so I sneakily took a photo of her whilst she was working
   - "it\u2019s funny how concentrated she is"
-  - This is the radio transmitter we use to communicate
-  - when one of us goes out
+  - 'This is the radio transmitter we use '
+  - to communicate when one of us goes out
   - but- we only use it for emergencies
   - "I can\u2019t go out right now, Lee will be back soon"
 --- !u!1 &25871053
@@ -2664,7 +2664,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599578989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21000381, y: 1.4876213, z: -10}
+  m_LocalPosition: {x: 0.21000095, y: 1.4876213, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2866,7 +2866,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 5dcc3e252a89acb4790f2a0b74bbb0fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d73a2c5a086052c4f97c090088e5c5ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
