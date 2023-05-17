@@ -13,6 +13,7 @@ public class PlayerController: MonoBehaviour
     private bool visible = false;
     public AnimationManager animManager;
     private bool animOpen = false;
+    public Animator animator;
 
 
     // Start is called before the first frame update
@@ -25,6 +26,12 @@ public class PlayerController: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        animator.SetFloat("Speed", Mathf.Abs(moveHorizontal));
+        
+        bool flipped = moveHorizontal < 0;
+        this.transform.rotation = Quaternion.Euler(new Vector3(0f, flipped ? 180f : 0, 0f));
+
         moveHorizontal = Input.GetAxisRaw("Horizontal");
         if (Input.GetKeyDown(KeyCode.E))
         {
